@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropes and Knots: History, Types, and Safety</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">🪢 Ropes & Knots</h1>
+            <nav class="nav-menu">
+                <a href="#knots" class="nav-link">Knots</a>
+                <a href="#quiz" class="nav-link" id="quizBtn">Quiz</a>
+                <a href="#timeline" class="nav-link">Timeline</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>The Art and Science of Ropes and Knots</h2>
+            <p>Discover the history, types, and techniques of rope tying spanning over 30,000 years</p>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="section">
+        <div class="container">
+            <h2>History of Ropes and Knots</h2>
+            <div class="history-content">
+                <p><strong>Ancient Origins:</strong> Archaeological evidence points to simple ropes existing over 25,000-30,000 years ago. In ancient Egypt, ropes were made from reed branches and papyrus to build pyramids, ships, and military machines.</p>
+                <p><strong>Technological Evolution:</strong> The Chinese used hemp rope by the 3rd century BCE. The invention of the "rope-walk" in Asia and Europe enabled continuous mass production of long ropes.</p>
+                <p><strong>Modern Era:</strong> The 15th-17th centuries saw rope become critical in maritime exploration. The 19th century brought steel rope (invented by Wilhelm Albert in 1834), and the 20th century introduced synthetic fibers like nylon and polyester with high strength properties.</p>
+                <p><strong>Cultural Impact:</strong> The Inca's "Quipu" used knots as a code system to record numbers and information. Ropes and knots remain integral to human progress in transportation, trade, and science.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Knots Section -->
+    <section class="section" id="knots">
+        <div class="container">
+            <h2>Types of Knots</h2>
+            <p class="section-subtitle">Click on any knot card to learn more</p>
+            <div class="knots-grid">
+                <!-- Bowline -->
+                <div class="knot-card" onclick="openModal('bowline')">
+                    <div class="knot-image">
+                        <img src="images/bowline.jpg" alt="Bowline Knot" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <h3>Bowline</h3>
+                    <p>Creates a fixed loop that won't slip under load</p>
+                </div>
+
+                <!-- Clove Hitch -->
+                <div class="knot-card" onclick="openModal('clove')">
+                    <div class="knot-image">
+                        <img src="images/clove-hitch.jpg" alt="Clove Hitch" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <h3>Clove Hitch</h3>
+                    <p>Quick attachment around a post or pole</p>
+                </div>
+
+                <!-- Figure-8 -->
+                <div class="knot-card" onclick="openModal('figure8')">
+                    <div class="knot-image">
+                        <img src="images/figure8.jpg" alt="Figure-8 Knot" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <h3>Figure-8</h3>
+                    <p>Stopper knot preventing rope from sliding through pulleys</p>
+                </div>
+
+                <!-- Sheet Bend -->
+                <div class="knot-card" onclick="openModal('sheet')">
+                    <div class="knot-image">
+                        <img src="images/sheet-bend.jpg" alt="Sheet Bend" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <h3>Sheet Bend</h3>
+                    <p>Connects two rope ends of different diameters</p>
+                </div>
+
+                <!-- Prusik -->
+                <div class="knot-card" onclick="openModal('prusik')">
+                    <div class="knot-image">
+                        <img src="images/prusik.jpg" alt="Prusik Knot" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <h3>Prusik</h3>
+                    <p>Friction knot for climbing and rescue operations</p>
+                </div>
+
+                <!-- Square Knot -->
+                <div class="knot-card" onclick="openModal('square')">
+                    <div class="knot-image">
+                        <img src="images/square-knot.jpg" alt="Square Knot" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <h3>Square Knot</h3>
+                    <p>Basic knot for simple applications</p>
+                </div>
+
+                <!-- Round Turn & Two Half Hitches -->
+                <div class="knot-card" onclick="openModal('roundturn')">
+                    <div class="knot-image">
+                        <img src="images/round-turn.jpg" alt="Round Turn & Two Half Hitches" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <h3>Round Turn & Two Half Hitches</h3>
+                    <p>Reliable method for securing a rope to a post</p>
+                </div>
+
+                <!-- Anchor Hitch -->
+                <div class="knot-card" onclick="openModal('anchor')">
+                    <div class="knot-image">
+                        <img src="images/anchor-hitch.jpg" alt="Anchor Hitch" onerror="this.src='images/placeholder.jpg'">
+                    </div>
+                    <h3>Anchor Hitch</h3>
+                    <p>Specialty hitch for tying rope to anchors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="section" id="quiz">
+        <div class="container">
+            <div style="text-align: center; margin: 40px 0;">
+                <button class="quiz-button" onclick="openQuizModal()">📝 Take the Rope & Knots Quiz</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interesting Facts Section -->
+    <section class="section light-bg">
+        <div class="container">
+            <h2>Interesting Facts</h2>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <h4>🏛️ Ancient Cultures</h4>
+                    <p>The Inca's Quipu system used knots and weights to record numbers and messages in a form of "knot writing".</p>
+                </div>
+                <div class="fact-card">
+                    <h4>🌍 World Records</h4>
+                    <p>The largest rope ever made was about 251 meters long and 2.2 meters in diameter, created in Okinawa for a tug-of-war tournament.</p>
+                </div>
+                <div class="fact-card">
+                    <h4>⛵ Maritime History</h4>
+                    <p>Discovery ships in the 15th-17th centuries were equipped with tartan ropes and coated cables specifically designed for sail handling in the ocean.</p>
+                </div>
+                <div class="fact-card">
+                    <h4>🧗 Modern Climbing</h4>
+                    <p>Dynamic ropes (for fall arrest) and static ropes (for ascent) are essential equipment in modern rock climbing and rescue services.</p>
+                </div>
+                <div class="fact-card">
+                    <h4>🏗️ Construction</h4>
+                    <p>Steel ropes revolutionized engineering; the Brooklyn Bridge (1870) was among the first major structures to use steel cable.</p>
+                </div>
+                <div class="fact-card">
+                    <h4>🔬 Strength</h4>
+                    <p>UHMWPE (Dyneema) ropes have an exceptional strength-to-weight ratio and can float in water, making them ideal for modern applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section" id="timeline">
+        <div class="container">
+            <h2>Historical Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">~30,000 BCE</div>
+                    <div class="timeline-content">
+                        <h4>First Ropes</h4>
+                        <p>Archaeological evidence of simple ropes from early human civilizations</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">~3000 BCE</div>
+                    <div class="timeline-content">
+                        <h4>Ancient Egypt</h4>
+                        <p>Egyptians produce ropes from papyrus and reed for pyramid construction and maritime use</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">~2000 BCE</div>
+                    <div class="timeline-content">
+                        <h4>Chinese Innovation</h4>
+                        <p>Chinese civilization produces hemp rope and uses it extensively in royal fleets and agriculture</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">500 BCE - 500 CE</div>
+                    <div class="timeline-content">
+                        <h4>Classical Era</h4>
+                        <p>Greeks and Romans use ropes for fortifications, bridges, and maritime applications</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1400-1600</div>
+                    <div class="timeline-content">
+                        <h4>Age of Discovery</h4>
+                        <p>Rope becomes critical for maritime exploration; large sailing ships equipped with strong tartan ropes</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1834</div>
+                    <div class="timeline-content">
+                        <h4>Steel Rope Invention</h4>
+                        <p>Wilhelm Albert invents the first steel rope, revolutionizing industrial applications</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1870</div>
+                    <div class="timeline-content">
+                        <h4>Brooklyn Bridge</h4>
+                        <p>First major structure using steel cable in its construction</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1930s</div>
+                    <div class="timeline-content">
+                        <h4>Synthetic Era Begins</h4>
+                        <p>Nylon rope invented; beginning of synthetic fiber revolution in rope manufacturing</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Mid-20th Century</div>
+                    <div class="timeline-content">
+                        <h4>Modern Materials</h4>
+                        <p>Development of polyester, polypropylene, UHMWPE, and specialized climbing rope systems</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Present</div>
+                    <div class="timeline-content">
+                        <h4>Advanced Rope Technology</h4>
+                        <p>Computer-tested ropes with strict safety standards (NFPA 1983, CE); widespread use in all industries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ropes & Knots. Educational resource for rope history and techniques.</p>
+        </div>
+    </footer>
+
+    <!-- Knot Details Modals -->
+    <!-- Bowline Modal -->
+    <div id="bowlineModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bowline')">&times;</span>
+            <h2>Bowline Knot</h2>
+            <div class="modal-body">
+                <img src="images/bowline.jpg" alt="Bowline" onerror="this.src='images/placeholder.jpg'" style="max-width: 300px;">
+                <h3>Description</h3>
+                <p>The Bowline creates a fixed loop at the rope's end. It's historically significant in maritime use and was likely derived from sail methods in old sailing ships.</p>
+                
+                <h3>Advantages</h3>
+                <ul>
+                    <li>Relatively simple to tie</li>
+                    <li>Easy to untie and doesn't slip under load</li>
+                    <li>Won't open the loop under stress</li>
+                </ul>
+                
+                <h3>Disadvantages</h3>
+                <ul>
+                    <li>Can slip if the rope isn't kept taut</li>
+                    <li>Requires additional security measures in climbing</li>
+                </ul>
+                
+                <h3>Best Uses</h3>
+                <p>Sailing, anchoring, climbing (with backup), securing loads</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clove Hitch Modal -->
+    <div id="cloveModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('clove')">&times;</span>
+            <h2>Clove Hitch</h2>
+            <div class="modal-body">
+                <img src="images/clove-hitch.jpg" alt="Clove Hitch" onerror="this.src='images/placeholder.jpg'" style="max-width: 300px;">
+                <h3>Description</h3>
+                <p>The Clove Hitch quickly secures around a post or rod. It's commonly used in temporary rigging and stage scenery adjustments.</p>
+                
+                <h3>Advantages</h3>
+                <ul>
+                    <li>Quick to tie and adjust</li>
+                    <li>Easy to loosen for height changes</li>
+                    <li>Useful for temporary holds</li>
+                </ul>
+                
+                <h3>Disadvantages</h3>
+                <ul>
+                    <li>Can slip under heavy load</li>
+                    <li>Not reliable for critical applications alone</li>
+                    <li>May jam on itself</li>
+                </ul>
+                
+                <h3>Best Uses</h3>
+                <p>Stage rigging, temporary fastening, educational purposes</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Figure-8 Modal -->
+    <div id="figure8Modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('figure8')">&times;</span>
+            <h2>Figure-8 Knot</h2>
+            <div class="modal-body">
+                <img src="images/figure8.jpg" alt="Figure-8" onerror="this.src='images/placeholder.jpg'" style="max-width: 300px;">
+                <h3>Description</h3>
+                <p>The Figure-8 is a stopper knot that prevents a rope from sliding through a pulley or channel. Named for its figure-eight loop shape.</p>
+                
+                <h3>Advantages</h3>
+                <ul>
+                    <li>Strong and reliable</li>
+                    <li>Doesn't jam under heavy load</li>
+                    <li>Easy to untie after loading</li>
+                    <li>Versatile foundation for other knots</li>
+                </ul>
+                
+                <h3>Disadvantages</h3>
+                <ul>
+                    <li>Can come undone if not under tension</li>
+                    <li>May open with unstable loads</li>
+                </ul>
+                
+                <h3>Best Uses</h3>
+                <p>Climbing, rope termination, sports equipment</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sheet Bend Modal -->
+    <div id="sheetModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('sheet')">&times;</span>
+            <h2>Sheet Bend</h2>
+            <div class="modal-body">
+                <img src="images/sheet-bend.jpg" alt="Sheet Bend" onerror="this.src='images/placeholder.jpg'" style="max-width: 300px;">
+                <h3>Description</h3>
+                <p>The Sheet Bend is a strong bend for joining two rope ends, especially useful when the ropes have different diameters.</p>
+                
+                <h3>Advantages</h3>
+                <ul>
+                    <li>Works with different rope sizes</li>
+                    <li>Relatively strong connection</li>
+                    <li>Reliable when properly tied</li>
+                </ul>
+                
+                <h3>Disadvantages</h3>
+                <ul>
+                    <li>Requires long rope ends for security</li>
+                    <li>Can slip under sudden loads without proper end management</li>
+                </ul>
+                
+                <h3>Best Uses</h3>
+                <p>Fishing nets, connecting ropes of different sizes, marine applications</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prusik Modal -->
+    <div id="prusikModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('prusik')">&times;</span>
+            <h2>Prusik Knot</h2>
+            <div class="modal-body">
+                <img src="images/prusik.jpg" alt="Prusik" onerror="this.src='images/placeholder.jpg'" style="max-width: 300px;">
+                <h3>Description</h3>
+                <p>The Prusik is a friction knot made from a small rope loop wrapped around a larger rope. It can "grip" and slide depending on tension, making it essential for climbing and rescue.</p>
+                
+                <h3>Advantages</h3>
+                <ul>
+                    <li>Bidirectional gripping</li>
+                    <li>Stable under stress</li>
+                    <li>Critical for rescue and climbing</li>
+                    <li>Allows ascending static ropes</li>
+                </ul>
+                
+                <h3>Disadvantages</h3>
+                <ul>
+                    <li>Requires specific Prusik loop</li>
+                    <li>May not grip on wet or smooth ropes</li>
+                    <li>Proper length and diameter are critical</li>
+                </ul>
+                
+                <h3>Best Uses</h3>
+                <p>Rock climbing, rope rescue, mountaineering, canyoning</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Square Knot Modal -->
+    <div id="squareModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('square')">&times;</span>
+            <h2>Square Knot (Reef Knot)</h2>
+            <div class="modal-body">
+                <img src="images/square-knot.jpg" alt="Square Knot" onerror="this.src='images/placeholder.jpg'" style="max-width: 300px;">
+                <h3>Description</h3>
+                <p>The Square Knot is a basic knot that joins two rope ends. It's commonly used for simple applications like tying shoelaces.</p>
+                
+                <h3>Advantages</h3>
+                <ul>
+                    <li>Simple and quick to tie</li>
+                    <li>Useful for everyday applications</li>
+                    <li>Easy to teach and remember</li>
+                </ul>
+                
+                <h3>Disadvantages</h3>
+                <ul>
+                    <li>Unreliable under load</li>
+                    <li>Can open or lose hold under stress</li>
+                    <li>Easy to tie incorrectly (Granny Knot)</li>
+                    <li>NOT suitable for critical applications</li>
+                </ul>
+                
+                <h3>Best Uses</h3>
+                <p>Light packages, shoelaces, simple bundles</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Round Turn & Two Half Hitches Modal -->
+    <div id="roundturnModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('roundturn')">&times;</span>
+            <h2>Round Turn & Two Half Hitches</h2>
+            <div class="modal-body">
+                <img src="images/round-turn.jpg" alt="Round Turn & Two Half Hitches" onerror="this.src='images/placeholder.jpg'" style="max-width: 300px;">
+                <h3>Description</h3>
+                <p>This knot combines one or more wraps around a post or anchor, followed by two half-hitches around the standing rope. It's a simple and reliable method for securing ropes.</p>
+                
+                <h3>Advantages</h3>
+                <ul>
+                    <li>Easy to prepare</li>
+                    <li>Creates stable anchoring</li>
+                    <li>Better than half-hitches alone</li>
+                    <li>Initial wrap distributes load</li>
+                </ul>
+                
+                <h3>Disadvantages</h3>
+                <ul>
+                    <li>Slightly more complex than simple hitches</li>
+                </ul>
+                
+                <h3>Best Uses</h3>
+                <p>Anchoring, securing to posts or rings, heavy rope applications</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Anchor Hitch Modal -->
+    <div id="anchorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('anchor')">&times;</span>
+            <h2>Anchor Hitch (Fisherman's Hitch)</h2>
+            <div class="modal-body">
+                <img src="images/anchor-hitch.jpg" alt="Anchor Hitch" onerror="this.src='images/placeholder.jpg'" style="max-width: 300px;">
+                <h3>Description</h3>
+                <p>The Anchor Hitch is a specialized knot for tying rope to large anchors, chains, or rings. It's an important maritime knot used in heavy-duty anchoring.</p>
+                
+                <h3>Advantages</h3>
+                <ul>
+                    <li>Highly reliable</li>
+                    <li>Specifically designed for anchors</li>
+                    <li>Withstands heavy loads</li>
+                    <li>Won't slip under tension</li>
+                </ul>
+                
+                <h3>Disadvantages</h3>
+                <ul>
+                    <li>Complex to tie correctly</li>
+                    <li>Difficult to release after heavy loading</li>
+                </ul>
+                
+                <h3>Best Uses</h3>
+                <p>Yacht anchoring, marine applications, heavy-duty anchoring</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Modal -->
+    <div id="quizModal" class="modal">
+        <div class="modal-content quiz-modal-content">
+            <span class="close" onclick="closeQuizModal()">&times;</span>
+            <h2>Ropes & Knots Quiz</h2>
+            <div id="quizContainer" class="quiz-container">
+                <!-- Quiz will be dynamically loaded here -->
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="btn" onclick="submitQuiz()">Submit Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
